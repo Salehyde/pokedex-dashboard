@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="lens"></div>
+      <div class="dots"><i></i><i></i><i></i></div>
+      <h1>POKÉDEX</h1>
+    </header>
+    <main>
+      <section class="side">
+        <div class="filters">
+          <input id="q" placeholder="Search by number or name…">
+          <select id="type"><option value="">All types</option></select>
+          <select id="gen"><option value="">All generations</option></select>
+        </div>
+        <p class="count" id="count"></p>
+        <div id="list"></div>
+      </section>
+      <section class="screen" id="screen"><div class="msg">Loading…</div></section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
